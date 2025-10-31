@@ -91,6 +91,24 @@ make publisher
 
 See [the publisher guide](./docs/guides/publishing/publish-server.md) for more details.
 
+#### AI Development Skills
+
+This repository includes AI-powered skills that help with MCP development workflows:
+
+**MCP Server Generator Skill** - Automatically generates compliant `server.json` files for MCP servers and hosted services. Supports NPM, PyPI, OCI, MCPB, NuGet packages and remote services with built-in validation.
+
+To use these skills in Claude:
+
+```
+/plugin marketplace add modelcontextprotocol/registry
+```
+
+Once loaded, you can use natural language to generate server.json files:
+- "Generate a server.json for https://github.com/example/my-mcp-server"
+- "Create a server.json for the hosted MCP service at https://api.example.com/mcp"
+
+See [.claude/skills/mcp-server-generator/README.md](.claude/skills/mcp-server-generator/README.md) for full documentation.
+
 #### Other commands
 
 ```bash
